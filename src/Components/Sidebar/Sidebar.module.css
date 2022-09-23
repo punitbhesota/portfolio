@@ -1,0 +1,29 @@
+.sidebar {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.719);
+  overflow-x: hidden;
+  z-index: 4;
+  margin-top: -20px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(8px);
+}
+
+.sidebar_links {
+  padding: 0 20px;
+  color: white;
+}
+.sidebar_links div {
+  margin: 15px 10px;
+  font-size: 21px;
+}
+@media (max-width: 800px) {
+  .sidebar {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    width: 0;
+  }
+  .logo img {
+    width: 150px;
+  }
+}

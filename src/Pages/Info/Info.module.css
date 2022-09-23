@@ -1,0 +1,143 @@
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  padding: 60px 0;
+  /* margin: 30px;
+  border-radius: 25px;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px); */
+}
+.image,
+.bio {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 30%;
+  padding: 0 30px;
+}
+.main_image {
+  height: 85vh;
+}
+.image {
+  justify-content: flex-end;
+}
+.bio {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.heading {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.info_coa {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.info_coa img {
+  background-color: rgb(255, 227, 27);
+  border-radius: 50%;
+  padding: 5px;
+  width: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.bio_para {
+  font-size: 18px;
+  text-align: justify;
+}
+.logo {
+  width: 200px;
+  margin-left: -180px;
+  margin-top: -250px;
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 1400px) {
+  .info {
+    padding: 100px 0;
+  }
+  .main_image {
+    height: 60vh;
+    border-radius: 10px;
+  }
+  .info_coa {
+    margin-top: 30px;
+  }
+  .logo {
+    width: 250px;
+    margin: -150px 0 0 -150px;
+  }
+}
+
+@media (max-width: 800px) {
+  .info {
+    flex-direction: column;
+  }
+  .image,
+  .bio {
+    width: 100%;
+    padding: 0;
+  }
+  .bio {
+    padding: 50px;
+    text-align: justify;
+    box-sizing: border-box;
+  }
+  .image {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .main_image {
+    border-radius: 0;
+  }
+  .logo {
+    margin: 0 0 -100px 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .info {
+    padding: 0;
+    margin: 0px;
+    border-radius: 0;
+  }
+  .bio {
+    padding: 25px;
+  }
+  .main_image {
+    width: 90%;
+    height: auto;
+  }
+  .heading {
+    font-size: 25px;
+  }
+  .logo {
+    width: 150px;
+    margin-bottom: -70px;
+  }
+}

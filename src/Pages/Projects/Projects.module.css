@@ -1,0 +1,87 @@
+.projects {
+  /* height: 100vh; */
+  /* background-color: rgba(255, 255, 255, 0.342);
+  border-radius: 25px;
+  margin: 30px;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px); */
+}
+
+.heading {
+  text-transform: uppercase;
+  color: white;
+  font-size: 50px;
+  background-color: grey;
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  padding: 5px 0;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.works1,
+.works2,
+.works3 {
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+.works1 div,
+.works2 div,
+.works3 div {
+  height: 70vh;
+  flex: 1;
+  background-color: black;
+}
+
+.works1 img,
+.works2 img,
+.works3 img {
+  width: 100%;
+  height: 100%;
+}
+
+.works1 img:hover,
+.works2 img:hover,
+.works3 img:hover {
+  opacity: 0.5;
+  /* cursor: pointer; */
+}
+
+@media (min-width: 1400px) {
+  .works1 div,
+  .works2 div,
+  .works3 div {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 800px) {
+  .projects {
+    margin: 0;
+    border-radius: 0;
+  }
+  .works1,
+  .works2,
+  .works3 {
+    flex-direction: column;
+    position: relative;
+  }
+  .works1 div,
+  .works2 div,
+  .works3 div {
+    /* min-height: 100%; */
+    /* object-fit: contain; */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  .works1 img,
+  .works2 img,
+  .works3 img {
+    object-fit: cover;
+  }
+}

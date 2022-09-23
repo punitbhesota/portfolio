@@ -1,0 +1,36 @@
+.navbar {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  padding: 15px 50px 0 50px;
+  align-items: center;
+  background-color: black;
+}
+.nav_links {
+  display: flex;
+}
+.nav_btn {
+  display: none;
+}
+.nav_links div {
+  margin: 0 20px;
+  cursor: pointer;
+}
+@media (min-width: 1400px) {
+  .navbar {
+    padding: 15px 100px;
+  }
+}
+@media (max-width: 800px) {
+  .nav_links {
+    display: none;
+  }
+  .nav_btn {
+    display: inline;
+  }
+}
+@media (max-width: 500px) {
+  .navbar {
+    padding: 15px;
+  }
+}
