@@ -1,21 +1,27 @@
 import React from "react";
 import { Link } from "react-scroll";
 import styles from "./Hero.module.css";
+import { Helmet } from "react-helmet";
+
 const Hero = () => {
   return (
     <div id="hero" className={styles.hero}>
-      <div className={styles.heading}>website developer</div>
+      <Helmet>
+        {/* Open Graph Protocol meta tags */}
+        <meta property="og:title" content="Punit Bhesota" />
+        <meta property="og:description" content="My name is Punit Kumar Bhesota, a software developer and this is my home on the internet. I design, develop and create websites and apps." />
+        <meta property="og:image" content="./info_pic.jpg"/>
+        <meta property="og:url" content="https://bhesota.web.app" />
+      </Helmet>
+      <div className={styles.heading}><span>a</span>software developer</div>
       <div className={styles.hero_info}>
         <div className={styles.hero_info_para}>
-          Your friendly neighbourhood freelance web developer with experience
-          building custom frontend websites through React js and fullstack
-          websites utilising MERN stack. And soon will be projects in React
-          Native too.
+          Your friendly neighbourhood software developer with expertise
+          building custom websites and apps through React js, Nextjs, Flutter, React Native.
+          Well-versed in managing databases with skills spanning MySQL, PostgreSQL and MongoDB. My toolkit also includes AWS for seamless cloud management and Docker for efficient containerization. 
         </div>
         <div className={styles.hero_info_para2}>
-          Motivated web designer and developer with trong collaboration skills
-          and skilled in conceptualizing, designing, developing and deploying
-          websites.
+          Enthusiastic web wizard and coding conjurer with collaboration superpowers! Equipped with the ability to turn coffee into code and brainstorming sessions into digital magic. Let's team up and turn your dreams into digital awesomeness - no wands required!
         </div>
         <Link to="contact" smooth className={styles.hero_info_btn}>
           Get in touch <img src="./arrowRW.png" alt="" />

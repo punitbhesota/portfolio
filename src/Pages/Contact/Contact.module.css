@@ -128,6 +128,11 @@
   position: relative;
   top: 100%;
 }
+
+.footer a{
+  text-decoration: none;
+  color:white;
+}
 @media (min-width: 1400px) {
   .contact {
     padding: 100px 0 0 0;

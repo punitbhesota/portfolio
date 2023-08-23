@@ -16,6 +16,7 @@
   margin: 15px 10px;
   font-size: 21px;
 }
+
 @media (max-width: 800px) {
   .sidebar {
     position: fixed;

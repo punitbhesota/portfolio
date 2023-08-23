@@ -13,6 +13,8 @@ const Sidebar = ({ isVisible, close }) => {
     },
   };
 
+  
+
   return (
     <motion.div
       variants={variants}
@@ -21,16 +23,21 @@ const Sidebar = ({ isVisible, close }) => {
       className={styles.sidebar}
     >
       <div className={styles.sidebar_links}>
-        <a
-          style={{ color: "white", textDecoration: "none", margin: "0 20px" }}
-          href="./PunitBhesotaResume.pdf"
-          download
-        >
-          <div>resume</div>
-        </a>
+        <div>
+          <a
+            style={{
+              color: "orange",
+              textDecoration: "none",
+            }}
+            href="./PunitBhesotaResume.pdf"
+            download
+          >
+            Resume
+          </a>
+        </div>
 
         <Link onClick={close} to="hero" smooth>
-          <div> Home</div>
+          <div>Home</div>
         </Link>
 
         <Link onClick={close} to="info" smooth>
