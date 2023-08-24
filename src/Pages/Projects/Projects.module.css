@@ -1,10 +1,8 @@
 .projects {
   /* height: 100vh; */
-  /* background-color: rgba(255, 255, 255, 0.342);
+  background-color: rgba(255, 255, 255, 0.342);
   border-radius: 25px;
-  margin: 30px;
-  -webkit-backdrop-filter: blur(3px);
-  backdrop-filter: blur(3px); */
+  margin-top: -20px;
 }
 
 .heading {
@@ -24,15 +22,19 @@
 .works2,
 .works3 {
   display: flex;
-  position: -webkit-sticky;
-  position: sticky;
+  /* position: -webkit-sticky; */
+  /* position: sticky; */
+  background-color: black;
   top: 0;
+  gap:14px;
   width: 100%;
+  padding:7px 30px;
 }
 .works1 div,
 .works2 div,
 .works3 div {
   height: 70vh;
+  border-radius: 25px;
   flex: 1;
   background-color: black;
 }
@@ -42,6 +44,8 @@
 .works3 img {
   width: 100%;
   height: 100%;
+  border-radius: 25px;
+
 }
 
 .works1 img:hover,
@@ -61,7 +65,7 @@
 
 @media (max-width: 800px) {
   .projects {
-    margin: 0;
+    margin: 10px 0 0  0 ;
     border-radius: 0;
   }
   .works1,
@@ -69,6 +73,9 @@
   .works3 {
     flex-direction: column;
     position: relative;
+    padding: 5px;
+    gap:5px;
+
   }
   .works1 div,
   .works2 div,

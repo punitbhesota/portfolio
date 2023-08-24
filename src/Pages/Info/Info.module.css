@@ -4,10 +4,8 @@
   align-items: center;
   background-color: orange;
   padding: 60px 0;
-  /* margin: 30px;
+  margin: 30px;
   border-radius: 25px;
-  -webkit-backdrop-filter: blur(3px);
-  backdrop-filter: blur(3px); */
 }
 .image,
 .bio {

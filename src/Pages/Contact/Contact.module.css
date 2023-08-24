@@ -100,24 +100,29 @@
   color: white;
 }
 .prefooter a:nth-child(4) {
-  background-color: #bf211e;
+  background-color: rgb(48, 48, 48);
+  border:1px solid white;
   cursor: url("../../../public/insta.png"), pointer;
 }
 .prefooter a:nth-child(1) {
-  background-color: white;
+  background-color: rgb(48, 48, 48);
+  border:1px solid white;
   cursor: url("../../../public/github.png"), pointer;
-  color: black;
+  /* color: black; */
 }
 .prefooter a:nth-child(2) {
-  background-color: #0e76a8;
+  background-color:rgb(48, 48, 48);
+  border:1px solid white;
+
   cursor: url("../../../public/linkedin.png"), pointer;
 }
 
 .prefooter a:nth-child(3) {
-  background-color: #c2c880;
-  cursor: url("../../../public/twitter.png"), pointer;
+  background-color: rgb(48, 48, 48);
+  border:1px solid white;
 
-  color: black;
+  cursor: url("../../../public/twitter.png"), pointer;
+  /* color: black; */
 }
 .footer {
   background-color: rgb(48, 48, 48);
