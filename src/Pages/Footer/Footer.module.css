@@ -1,0 +1,114 @@
+.footer_main{
+    background-color: #252c35;
+    padding: 20px;
+    border-radius: 25px 25px 0 0;
+    text-align: center;
+    background-attachment:scroll;
+}
+
+.prefooter{
+    display: flex;
+    justify-content:space-around;
+}
+
+.footer_links{
+    display: flex;
+}
+
+.footer_link{
+    color: white;
+    font-family: sans-serif;
+    font-style: italic;
+    padding-right: 20px;
+    font-size: 10px;
+}
+
+.sitemap, .socials{
+    flex-direction: column;
+    width: 200px;
+    display: flex;
+    align-items: flex-start;   
+}
+
+.sitemap heading{
+    color:white;
+}
+.sitemap div, .socials a{
+    cursor: pointer;
+    color: grey;
+    text-decoration: none; 
+    margin: 6px
+}
+.sitemap div:hover, .socials a:hover{
+    color:white;
+}
+
+.socials heading{
+    color:white;
+}
+
+.footer_heading{
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.heading {
+    font-family: "Oswald", Impact;
+    font-size: 10vw;
+    letter-spacing: -5px;
+    color: white;
+    margin:0;
+    margin-top: -40px;
+}
+
+.heading_desc{
+    display:flex;
+    justify-content: space-between;
+    font-size: 12px;
+    letter-spacing: -1px;
+    color:grey;
+    font-weight: 200;
+}
+
+
+.top {
+    width: 100px;
+    animation: rotation 8s infinite linear;
+    cursor: pointer;
+    /* margin-left: 90vw; */
+    /* margin-bottom: 10px; */
+    border-radius: 50%;
+  }
+  .top:hover {
+    animation: rotation 1s infinite linear;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+@media (max-width: 800px) {
+    .heading {
+        font-size: 100px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .top {
+      margin-left: 70vw;
+}
+}
+
+@media (max-width: 500px) {
+    .heading {
+      font-size: 70px;
+      letter-spacing: -2px;
+      line-height: -5px;
+    }
+  }

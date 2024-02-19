@@ -98,21 +98,6 @@ const Contact = () => {
         </div>
       </div>
       <ToastContainer />
-
-      <Link to="hero" smooth>
-        <img className={styles.top} src="./stickers/top.png" alt="" />
-      </Link>
-      <div className={styles.prefooter}>
-        <a href="https://github.com/punitbhesota">Github</a>
-        <a href="https://linkedin.com/in/punitbhesota">Linkedin</a>
-        <a href="https://twitter.com/punitbhesota">Twitter</a>
-        <a href="https://instagram.com/punitbhesota/">Instagram</a>
-      </div>
-
-      <footer className={styles.footer}>
-        <div>@punitbhesota 2022 , Built by me 🧡</div>
-        <div>Mail : <a href="mailto:punnitbhesota@gmail.com">punnitbhesota@gmail.com</a></div>
-      </footer>
     </div>
   );
 };

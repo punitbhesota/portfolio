@@ -8,6 +8,7 @@ import Contact from "../Contact/Contact";
 import Hero from "../Hero/Hero";
 import Info from "../Info/Info";
 import Projects from "../Projects/Projects";
+import Footer from "../Footer/Footer";
 
 const Main = () => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -27,6 +28,7 @@ const Main = () => {
         <Info />
         <Projects />
         <Contact />
+        <Footer/>
       </div>
     </div>
   );

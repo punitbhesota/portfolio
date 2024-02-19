@@ -3,6 +3,7 @@
   background-color: #15616d;
   background-color: black;
   color: white;
+  padding-bottom: 30px;
 }
 .heading {
   font-family: "Oswald", Impact;
@@ -20,26 +21,6 @@
   text-transform: uppercase;
 }
 
-.top {
-  width: 100px;
-  animation: rotation 8s infinite linear;
-  cursor: pointer;
-  margin-left: 90vw;
-  margin-bottom: 10px;
-  border-radius: 50%;
-}
-.top:hover {
-  animation: rotation 1s infinite linear;
-}
-
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .contact_content {
   display: flex;
   align-items: center;
