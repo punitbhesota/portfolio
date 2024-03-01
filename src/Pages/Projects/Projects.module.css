@@ -1,6 +1,6 @@
 .projects {
   /* height: 100vh; */
-  background-color: rgba(255, 255, 255, 0.342);
+  background-color: transparent;
   border-radius: 25px;
   margin-top: -20px;
 }
@@ -24,7 +24,6 @@
   display: flex;
   /* position: -webkit-sticky; */
   /* position: sticky; */
-  background-color: black;
   top: 0;
   gap:14px;
   width: 100%;
@@ -33,10 +32,10 @@
 .works1 div,
 .works2 div,
 .works3 div {
-  height: 70vh;
+  /* height: 70vh; */
   border-radius: 25px;
   flex: 1;
-  background-color: black;
+  /* background-color: black; */
 }
 
 .works1 img,
@@ -45,27 +44,31 @@
   width: 100%;
   height: 100%;
   border-radius: 25px;
-
+  filter:sepia();
+  /* opacity: 0.5; */
 }
 
 .works1 img:hover,
 .works2 img:hover,
 .works3 img:hover {
-  opacity: 0.5;
+  /* opacity: 1; */
+  filter: none;
+  transition: 0.3s;
   /* cursor: pointer; */
+
 }
 
-@media (min-width: 1400px) {
+/* @media (min-width: 1400px) {
   .works1 div,
   .works2 div,
   .works3 div {
     height: 60vh;
   }
-}
+} */
 
 @media (max-width: 800px) {
   .projects {
-    margin: 10px 0 0  0 ;
+    margin: 10px 10px 0px 10px ;
     border-radius: 0;
   }
   .works1,
@@ -74,21 +77,22 @@
     flex-direction: column;
     position: relative;
     padding: 5px;
-    gap:5px;
+    gap:10px;
+  }
 
-  }
-  .works1 div,
-  .works2 div,
-  .works3 div {
-    /* min-height: 100%; */
-    /* object-fit: contain; */
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-  }
   .works1 img,
   .works2 img,
   .works3 img {
-    object-fit: cover;
+    /* object-fit: cover; */
+    /* opacity: 1; */
+    border-radius: 15px;
+  }
+
+  .works1 img:hover,
+  .works2 img:hover,
+  .works3 img:hover {
+    /* opacity: 0.5; */
+    transition: 0.3s;
+    /* cursor: pointer; */
   }
 }

@@ -2,9 +2,10 @@
   display: flex;
   color: white;
   justify-content: space-between;
-  padding: 15px 50px 0 50px;
+  padding: 30px 30px 0 30px;
   align-items: center;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0);
+  background: linear-gradient(180deg, #050911 ,transparent);
 }
 .nav_links {
   display: flex;

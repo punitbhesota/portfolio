@@ -44,7 +44,7 @@ const Project = () => {
             ))}
           </div>
           <div style={{ color: "white" }}>
-            <p style={{ color: detail.textcolor }}>About {detail.name}</p>
+            <p style={{ color: 'white' }}>About {detail.name}</p>
             {detail.content}
           </div>
         </div>
@@ -87,7 +87,7 @@ const Project = () => {
         </div>
         <div
           className={styles.mob_content}
-          style={{ backgroundColor: detail.color }}
+          style={{ backgroundColor: 'transparent' }}
         >
           {detail.content}
         </div>

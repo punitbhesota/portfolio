@@ -10,32 +10,32 @@ const Projects = () => {
           <Link to="/projects/1">
             <img src="./mockups/mu_pingme.jpg" alt="" />
           </Link>
-        </div>
-        <div>
-          <Link to="/projects/2">
-            <img src="./mockups/mu_cs_e.png" alt="" />
-          </Link>
-        </div>
-      </div>
-      <div className={styles.works2}>
+        </div> 
         <div>
           <Link to="/projects/3">
             <img src="./mockups/mu_client_e.png" alt="" />
           </Link>
         </div>
         <div>
-          <Link to="/projects/4">
-            <img src="./mockups/mu_ecom.jpg" alt="" />
-          </Link>
-        </div>
-      </div>
-      <div className={styles.works3}>
-        <div>
           <Link to="/projects/5">
             <img src="./mockups/mu_gym2.jpg" alt="" />
           </Link>
         </div>
-
+      </div>
+      {/* <div className={styles.works2}>    
+        
+      </div> */}
+      <div className={styles.works3}>
+      <div>
+          <Link to="/projects/4">
+            <img src="./mockups/mu_ecom.jpg" alt="" />
+          </Link>
+        </div>
+        <div>
+          <Link to="/projects/2">
+            <img src="./mockups/mu_cs_e.png" alt="" />
+          </Link>
+        </div>
         <div>
           <Link to="/projects/6">
             <img src="./mockups/mu_csa_ee.jpg" alt="" />

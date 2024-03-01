@@ -6,14 +6,13 @@ import { Link } from "react-scroll";
 const Sidebar = ({ isVisible, close }) => {
   const variants = {
     visible: {
-      width: "250px",
+      width: "50%",
     },
     collapsed: {
       width: "0px",
     },
   };
 
-  
 
   return (
     <motion.div
@@ -22,14 +21,17 @@ const Sidebar = ({ isVisible, close }) => {
       animate={isVisible ? "visible" : "collapsed"}
       className={styles.sidebar}
     >
+      <div className={styles.nav_btn} onClick={close}>
+        <img src="./nav-icon.png" alt="" />
+      </div>
       <div className={styles.sidebar_links}>
         <div>
           <a
             style={{
-              color: "orange",
+              color: "white",
               textDecoration: "none",
             }}
-            href="./PunitBhesotaResume.pdf"
+            href="./PunitKumarBhesotaResume.pdf"
             download
           >
             Resume

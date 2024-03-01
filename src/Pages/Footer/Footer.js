@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Footer.module.css";
+// import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
@@ -36,19 +37,22 @@ const Footer = () => {
         </div>
         </div>
       </div> */}
-      <div className={styles.footer_heading}>
-        <div className={styles.heading_desc}>
+      <div className={styles.heading_desc}>
           <div>Software Developer</div>
           <div>Portfolio 2024</div>
         </div>
-        <div className={styles.heading}>
-          Punit Bhesota
-        </div>
+
         <div className={styles.heading_desc}>
           <div>Built by me 🧡</div>
           <div>Mail : <a href="mailto:punnitbhesota@gmail.com" style={{textDecoration:"none",color:"grey"}}>punnitbhesota@gmail.com</a></div>
         </div>
-      </div>
+      {/* <div className={styles.footer_heading}>
+        
+        <div className={styles.heading}>
+          Punit Bhesota
+        </div>
+        
+      </div> */}
       
     </div>
   );

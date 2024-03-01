@@ -13,7 +13,7 @@ const Hero = () => {
         <meta property="og:image" content="./info_pic.jpg"/>
         <meta property="og:url" content="https://bhesota.web.app" />
       </Helmet>
-      <div className={styles.heading}><span>a</span>software developer</div>
+      <div className={styles.heading}>punit bhesota</div>
       <div className={styles.hero_info}>
         <div className={styles.hero_info_para}>
           Your friendly neighbourhood software developer with expertise

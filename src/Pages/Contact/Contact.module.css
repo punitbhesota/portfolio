@@ -1,9 +1,9 @@
 .contact {
-  /* height: 100vh; */
-  background-color: #15616d;
-  background-color: black;
+  height: 100vh;
+  background-color: transparent;
   color: white;
-  padding-bottom: 30px;
+  background: linear-gradient(180deg, transparent, black);
+  padding:30px;
 }
 .heading {
   font-family: "Oswald", Impact;
@@ -30,7 +30,8 @@
 }
 .form {
   height: 400px;
-  background-color: white;
+  /* background-color: white; */
+  border:1px solid white;
   width: 500px;
   margin: 0 20px 0 0px;
   border-radius: 25px;
@@ -43,16 +44,16 @@
 .form button {
   outline: none;
   background-color: rgb(245, 255, 102);
-  background-color: #fff;
+  background-color: transparent;
   border: none;
   border-bottom: 1px solid grey;
-
   padding: 10px 10px 10px 0;
   margin: 5px;
   font-size: 16px;
+  color:white;
 }
 .form button {
-  background-color: orange;
+  background-color: rgb(18, 17, 41);
   color: white;
   cursor: pointer;
   border: none;
@@ -121,11 +122,21 @@
 }
 @media (min-width: 1400px) {
   .contact {
-    padding: 100px 0 0 0;
+    padding: 80px;
+    height:80vh;
+  }
+}
+
+@media (max-width: 1400px) {
+  .contact {
+    height:110vh;
   }
 }
 
 @media (max-width: 600px) {
+  .contact{
+    height:auto
+  }
   .heading {
     font-size: 60px;
   }
