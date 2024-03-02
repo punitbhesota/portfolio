@@ -11,7 +11,7 @@ const Navbar2 = ({ toggleSideBar }) => {
       <div className={styles.nav_links}>
         <a
           style={{ color: "white", textDecoration: "none", margin: "0 20px" }}
-          href="./PunitBhesotaResume.pdf"
+          href="./PunitKumarBhesotaResume.pdf"
           download
         >
           resume
