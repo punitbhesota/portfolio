@@ -68,6 +68,9 @@
     margin: 10px 10px 0px 10px ;
     border-radius: 0;
   }
+  .heading {  
+    font-size: 65px;
+  }
   .works1,
   .works2,
   .works3 {
@@ -77,13 +80,11 @@
     gap:10px;
   }
 
-  /* .works1 img,
+  .works1 img,
   .works2 img,
   .works3 img {
-    object-fit: cover;
-    opacity: 1;
-    border-radius: 15px;
-  } */
+    border-radius: 20px;
+  }
 
 .works1:target img,
 .works2:target img,
