@@ -1,8 +1,28 @@
 .footer_main{
     background-color: black;
-    padding: 20px;
-    /* border-radius: 25px 25px 0 0; */
+    padding: 60px 20px 20px 20px;
     text-align: center;
+}
+
+.subheading_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+.subheading{
+    color:white;
+    display: flex;
+    justify-content: center;
+}
+
+.socials{
+    color:white;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    margin-bottom: 10px;
 }
 
 .prefooter{
@@ -22,7 +42,7 @@
     font-size: 10px;
 }
 
-.sitemap, .socials{
+.sitemap{
     flex-direction: column;
     width: 200px;
     display: flex;
@@ -32,13 +52,13 @@
 .sitemap heading{
     color:white;
 }
-.sitemap div, .socials a{
+.sitemap div, a{
     cursor: pointer;
     color: grey;
     text-decoration: none; 
     margin: 6px
 }
-.sitemap div:hover, .socials a:hover{
+.sitemap div:hover, a:hover{
     color:white;
 }
 
@@ -60,14 +80,7 @@
     margin-top: -40px;
 }
 
-.heading_desc{
-    display:flex;
-    justify-content: space-between;
-    font-size: 14px;
-    letter-spacing: -1px;
-    color:grey;
-    font-weight: 200;
-}
+
 .top {
     width: 100px;
     animation: rotation 8s infinite linear;
@@ -90,6 +103,9 @@
   }
 
 @media (max-width: 800px) {
+    .subheading_container{
+        flex-direction: column;
+    }
     .heading {
         font-size: 100px;
     }

@@ -5,6 +5,19 @@ import styles from "./Footer.module.css";
 const Footer = () => {
   return (
     <div id="footer" className={styles.footer_main}>
+      <div className={styles.socials}>
+          <a href="https://github.com/punitbhesota">Github</a>
+          <a href="https://linkedin.com/in/punitbhesota">Linkedin</a>
+          <a href="https://twitter.com/punitbhesota">Twitter</a>
+          <a href="https://instagram.com/punitbhesota/">Instagram</a>
+          <a href="mailto:punnitbhesota@gmail.com">Email</a>
+
+      </div>
+      <div className={styles.subheading_container}>
+        <div className={styles.subheading}>@punitbhesota 2024 ,Built by me 🧡</div>
+        {/* <div>Mail: <a href="mailto:punnitbhesota@gmail.com" style={{textDecoration:"none",color:"white"}}>punnitbhesota@gmail.com</a></div> */}
+      </div>
+
       {/* <div className={styles.prefooter}>
         <div className={styles.footer_links}>
           <div className={styles.footer_link}>01/</div>
@@ -36,24 +49,7 @@ const Footer = () => {
 
         </div>
         </div>
-      </div> */}
-      <div className={styles.heading_desc}>
-          <div>Software Developer</div>
-          <div>Portfolio 2024</div>
-        </div>
-
-        <div className={styles.heading_desc}>
-          <div>Built by me 🧡</div>
-          <div>Mail : <a href="mailto:punnitbhesota@gmail.com" style={{textDecoration:"none",color:"grey"}}>punnitbhesota@gmail.com</a></div>
-        </div>
-      {/* <div className={styles.footer_heading}>
-        
-        <div className={styles.heading}>
-          Punit Bhesota
-        </div>
-        
-      </div> */}
-      
+      </div> */}      
     </div>
   );
 };
