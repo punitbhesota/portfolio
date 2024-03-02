@@ -6,16 +6,13 @@
 }
 
 .heading {
+  font-family: "Oswald", Impact;
+  font-size: 80px;
+  text-align: center;
   text-transform: uppercase;
-  color: white;
-  font-size: 50px;
-  background-color: grey;
-  width: 100%;
-  font-size: 20px;
-  display: flex;
-  padding: 5px 0;
-  align-items: center;
-  justify-content: space-around;
+  letter-spacing: -5px;
+  color:white;
+  margin-top: -30px;
 }
 
 .works1,
@@ -80,19 +77,17 @@
     gap:10px;
   }
 
-  .works1 img,
+  /* .works1 img,
   .works2 img,
   .works3 img {
-    /* object-fit: cover; */
-    /* opacity: 1; */
+    object-fit: cover;
+    opacity: 1;
     border-radius: 15px;
-  }
+  } */
 
-  .works1 img:hover,
-  .works2 img:hover,
-  .works3 img:hover {
-    /* opacity: 0.5; */
-    transition: 0.3s;
-    /* cursor: pointer; */
-  }
+.works1:target img,
+.works2:target img,
+.works3:target img {
+  filter: none; /* Remove filter when targeted */
+}
 }

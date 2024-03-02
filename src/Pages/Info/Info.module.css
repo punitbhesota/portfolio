@@ -103,8 +103,8 @@
     width: 100%;
     padding: 0;
   }
-  .bio_para {
-    font-size: 15px;
+  .bio_para { 
+    font-size: 16px;
   }
   .image {
     flex-direction: column-reverse;
@@ -122,9 +122,10 @@
 
 @media (max-width: 640px) {
   .info {
-    padding: 0;
+    padding: 100px 0px;
     margin: 0px;
     border-radius: 0;
+    background: linear-gradient(180deg,transparent,black,black,black,black,transparent)
   }
   .bio {
     padding: 25px;

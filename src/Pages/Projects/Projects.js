@@ -5,6 +5,7 @@ import styles from "./Projects.module.css";
 const Projects = () => {
   return (
     <div id="projects" className={styles.projects}>
+      <div className={styles.heading}>code <span style={{fontFamily:"cursive"}}>&</span> chaos</div>
       <div className={styles.works1}>
         <div>
           <Link to="/projects/1">
