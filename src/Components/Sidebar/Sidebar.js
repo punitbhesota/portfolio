@@ -25,7 +25,6 @@ const Sidebar = ({ isVisible, close }) => {
         <img src="./nav-icon.png" alt="" />
       </div>
       <div className={styles.sidebar_links}>
-        <div>
           <a
             style={{
               color: "white",
@@ -34,9 +33,8 @@ const Sidebar = ({ isVisible, close }) => {
             href="./PunitKumarBhesotaResume.pdf"
             download
           >
-            Resume
+            <div>Resume</div>
           </a>
-        </div>
 
         <Link onClick={close} to="hero" smooth>
           <div>Home</div>

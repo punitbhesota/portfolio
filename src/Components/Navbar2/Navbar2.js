@@ -10,11 +10,11 @@ const Navbar2 = ({ toggleSideBar }) => {
       </div>
       <div className={styles.nav_links}>
         <a
-          style={{ color: "white", textDecoration: "none", margin: "0 20px" }}
+          style={{ color: "white", textDecoration: "none"}}
           href="./PunitKumarBhesotaResume.pdf"
           download
         >
-          resume
+          <div>resume</div>
         </a>
         <Link to="hero" smooth={true}>
           <div>home</div>
